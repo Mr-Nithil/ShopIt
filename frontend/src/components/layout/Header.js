@@ -26,13 +26,14 @@ const Header = () => {
                 <div className="col-12 col-md-3">
                     <div className="navbar-brand">
                         <Link to="/"><img src="/images/fitmanLogo.jpg"/></Link>
+                        <span id="cart" className="ml-3">Cart </span>
                     </div>
                 </div>
 
                 <Search />                
                 <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
                     <Link to='/cart' style={{ textDecoration:'none' }}>
-                        <span id="cart" className="ml-3">Cart</span>
+                        <span id="cart" className="ml-3">Cart </span>
                         <span className="ml-1" id="cart_count" style={{ marginLeft: '10px', marginRight: '10px' }}>{cartItems.length}</span>
                     </Link>
 
